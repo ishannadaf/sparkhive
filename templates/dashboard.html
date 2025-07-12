@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard - SparkHive{% endblock %}
+{% block content %}
+
+<html>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0d101b] tracking-light text-[32px] font-bold leading-tight min-w-72">Feed</p></div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEg9SeYDkPevYAzJOJ1ll3AuWh-uxn_NtgJkJ1icawhJ7TPtYdT02beWUWO8qvHdA48kVFIh4yFmxYVW8hNux_dIgiUFBzA5DPzPAZ8B3Kb3ysFBq7WBs6RmBllgshU9ZnHh7J0ZE4okwoJI-I8qDIyCFVMJ1a3yYyrZudtzKyDPkYU2tLuj6yQktefgMwkrGLrRl3cI6ONG4apRI6mAzqxfKFfAbdGBf_EVb8rZ2iEZb91EpQZBvh-lZpe1D1wRc-ABgtw5b7tMEU");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#4c5a9a] text-sm font-normal leading-normal">Posted by @Alex_R</p>
+                  <p class="text-[#0d101b] text-lg font-bold leading-tight tracking-[-0.015em]">Revolutionizing Campus Navigation with AR</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#4c5a9a] text-base font-normal leading-normal">
+                      Imagine an augmented reality app that overlays real-time information onto your campus environment. This app could guide students to classrooms, events, and
+                      resources, making campus navigation intuitive and engaging.
+                    </p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2a4eed] text-[#f8f9fc] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsVfY_hbZ619ZdzoWwaGIB_etgkY81WBXgR0Vz6TSMCu-jWHXk2wOJyv2jqEasTxyi38U2vsVyc63JL-AqVoaZZ3mYz2LddHDuDD65_kC2doO_iqS7jJEZGms93WlAf5NS6Viel5OxkES-JikIPsF7tbSf2CLC5etwIXtVs0bsQSVRpoaOGOtvRPb6GnslM-zKrFk-6DtR7bFf9cGKdjOSlgGBFg-cpvqM__ikcPZ_U8W3NHJKv7mKdJ1SDNQojg-hVdrLG4ot3zxI");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#4c5a9a] text-sm font-normal leading-normal">Posted by @Sarah_M</p>
+                  <p class="text-[#0d101b] text-lg font-bold leading-tight tracking-[-0.015em]">Sustainable Solutions for Campus Waste</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#4c5a9a] text-base font-normal leading-normal">
+                      Let's tackle campus waste with innovative recycling and composting programs. We can design interactive waste bins that provide feedback on sorting and explore
+                      partnerships with local businesses for upcycling initiatives.
+                    </p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2a4eed] text-[#f8f9fc] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIHJrO1NdDQ3X5BLkoAn9RgK6HOY4xq4TF1ElDr2M723MTCsfzi8X35Z8WYcQwHB5C7KS1XJElYlAjhBC1dn2uida8IiLBEEcdi86ucc40nGLs1NT2KsdG8VmLGOlpRKyZob30ZrzdEn_j3wrXLNSYHCxCn1gwytvJEIQURcn9Lhlu_uLbi_40QNef9-Dzm5ZRSwnc_3OJxCiBgrDzGYxlexEuhlWJ63BFvyuPmgdo4PtUNkuAO1uf_IAVhBSUGNNSGDJbZT-uvmzX");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#4c5a9a] text-sm font-normal leading-normal">Posted by @David_L</p>
+                  <p class="text-[#0d101b] text-lg font-bold leading-tight tracking-[-0.015em]">Enhancing Student Mental Wellness Through Tech</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#4c5a9a] text-base font-normal leading-normal">
+                      Develop a platform that connects students with mental health resources, offering personalized support and stress management tools. Features could include
+                      guided meditation, peer support forums, and access to counseling services.
+                    </p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2a4eed] text-[#f8f9fc] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col w-[360px]">
+            <h2 class="text-[#0d101b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Suggested Users</h2>
+            <div class="flex items-center gap-4 bg-[#f8f9fc] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnldWfgmGL5FFmZWp3gZUjPvvzRx6y1nh25Wk-4nlcnc1ywhKKbSyKvdbE0QR-osHdkr9RXMsDtH7_8v1_vpUI-MxASprOE3aSdkuJ1rm0RIfWIFENO5GCRKGQP2ha8-NioLhOyVJWwPQtvVFy1lVrAeE8ampTDm6d-wSKGBpOAitjxK8G7Qf0BFR1PkpVLShmhUJnPmoHV1OLrSN4IquTYEPHRQ6jslLMiaTvssUojfaaHOpCV6Jh12WggGtDkmN4HAV5N9DQLlp4");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d101b] text-base font-medium leading-normal line-clamp-1">Ethan_C</p>
+                <p class="text-[#4c5a9a] text-sm font-normal leading-normal line-clamp-2">Software Engineer</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8f9fc] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjT0UGRZPY8rl7h3QtKHg029gt9fUJW6X_KV_CXzi9FHKqh5TZo1KV_d114TNzPlyKIySnu1QnuSpZQMAIp4u9BriChelhtW-g6w_yplJAS980A8dRs7itCPcZYLxGcCCDMSE9RKRZjcHOD05ohRFVq4EhkfSu9Y8a8h8_7CB04PO2GLJeJgaNSBtPgBTAiGnggn41fDw5A8J8Gr_cyqdPqcCQujXi1DFJRS0Hkdq9IgkYPm9IqpkDFUpUmQ8GVgSjbWz0gUihnzJv");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d101b] text-base font-medium leading-normal line-clamp-1">Olivia_S</p>
+                <p class="text-[#4c5a9a] text-sm font-normal leading-normal line-clamp-2">Product Designer</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8f9fc] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkylmMSQmYqBcaypCmpVtOoVurjIBzdPPz74F7Nfu03MLIixMnYph8C_jiujKatSpyQjYpp3p4UjsDjFjn_2X0rNPbFY9PQX_rrKpxixB1J490249Ofa2haJ_v_hkPM2zWwPnrFFXGZMfQllMh-WqlbxSGK95ZVrUTARpHfrtsGyE-EVxDCVgZDwudEOKEuRll_hTXj2l5HzekT8DKGYtFVuQTekU-DpXktM62vFPvgo3fKyeWODV_XpufOXOVSGups80lN4EKwZWy");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d101b] text-base font-medium leading-normal line-clamp-1">Noah_B</p>
+                <p class="text-[#4c5a9a] text-sm font-normal leading-normal line-clamp-2">Marketing Specialist</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8f9fc] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmPlZCIAqAeBtyZgZVGayaNjyF8hEwdkAClU4tWD6g0crELatoXqe46_T3gyAxFMFxQIrz3Xr1FiiAGIIOJ5zsFcsCv5-mjI0FRq2KMseampjcjSlIfG0zJ92IubpUbRtxrvr2Un_n81x6juiYwBUPJoNkjTVGsWWZNVgc2-mh57hegfbiHNcLNSu3BHOlxAmb7MhHDZDxzdzMZxaZoNE_bIwe67CIG1Kkfj11nJMp8_7cMJ1I1k2EpABwbE4VSb8lZ8BVSKGt8z4C");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d101b] text-base font-medium leading-normal line-clamp-1">Ava_R</p>
+                <p class="text-[#4c5a9a] text-sm font-normal leading-normal line-clamp-2">Data Analyst</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+{% endblock %}

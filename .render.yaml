@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sparkhive
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn college_connect.wsgi
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: YOUR_SECRET_KEY
+      - key: DEBUG
+        value: false

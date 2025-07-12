@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Edit Idea - SparkHive{% endblock %}
+{% block content %}
+<div class="max-w-2xl mx-auto p-6">
+  <h2 class="text-2xl font-bold mb-4 text-[#0d101b]">Edit Your Idea</h2>
+  <form method="POST" enctype="multipart/form-data" class="bg-white p-4 rounded shadow">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Update</button>
+    <a href="{% url 'dashboard' %}" class="ml-4 text-sm text-gray-500 hover:underline">Cancel</a>
+  </form>
+</div>
+{% endblock %}
